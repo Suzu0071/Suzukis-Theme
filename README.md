@@ -1,1 +1,1 @@
-# Suzukli-s-Theme
+# Suzukis-Theme
