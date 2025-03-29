@@ -425,12 +425,12 @@
 }
 
 .appMount__51fd7 {
-    background: var(--background-overlay)
+    background: var(--background-overlay) !important
 }
 
 .app__160d8,
 body {
-    background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0) !important
 }
 
 .bg__960e4 {
@@ -1890,8 +1890,8 @@ div[aria-checked=true] .mentionButton__841c8 {
 }
 
 .content__908e2 {
-    background: rgba(0, 0, 0, 0);
-    color: var(--main-color)
+    background: rgba(0, 0, 0, 0) !important;
+    color: var(--channel-bar-titles-color)
 }
 
 .divider__5126c {
@@ -3641,7 +3641,7 @@ textarea::-webkit-scrollbar {
     padding-top: 20px;
     display: flex;
     align-items: center;
-    color: var(--main-color);
+    color: var(--channel-bar-titles-color);
     font-size: 11px;
     font-weight: 700;
     transition: all .15s ease-in-out;
@@ -3656,7 +3656,7 @@ textarea::-webkit-scrollbar {
     content: "";
     height: 2px;
     flex-grow: 1;
-    background: linear-gradient(to left, currentColor 50%, transparent);
+    background: var(--channel-bar-titles-color);
     margin-right: 5px
 }
 
@@ -3664,7 +3664,7 @@ textarea::-webkit-scrollbar {
     content: "";
     height: 2px;
     flex-grow: 1;
-    background: linear-gradient(to right, currentColor 50%, transparent);
+    background: var(--channel-bar-titles-color);
     margin-left: 5px
 }
 
@@ -8910,7 +8910,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 }
 
 .standardSidebarView__23e6b>.contentRegion__23e6b {
-    background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0) !important;
 }
 
 .contentRegion__23e6b .contentRegionScroller__23e6b,
@@ -9984,12 +9984,12 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 }
 
 .standardSidebarView__23e6b {
-    background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .sidebarRegionScroller__23e6b {
     margin: 30px 8px 30px 0;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0) !important;
     mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent)
 }
 
@@ -10004,7 +10004,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 }
 
 .header_b3f026 {
-    color: var(--main-color);
+    color: var(--channel-bar-titles-color);
     font-weight: 700;
     padding-top: 20px;
     display: flex;
@@ -10016,7 +10016,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
     content: "";
     height: 2px;
     flex-grow: 1;
-    background: linear-gradient(to left, var(--main-color) 50%, transparent);
+    background: var(--channel-bar-titles-color);
     margin-right: 5px
 }
 
@@ -10024,7 +10024,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
     content: "";
     height: 2px;
     flex-grow: 1;
-    background: linear-gradient(to right, var(--main-color) 50%, transparent);
+    background: var(--channel-bar-titles-color);
     margin-left: 5px
 }
 
@@ -11257,7 +11257,7 @@ div#magane div.stickerWindow div.packs-toolbar {
 
 .visual-refresh .container__2637a,
 .visual-refresh .privateChannels__35e86 {
-    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3))
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3)) !important
 }
 
 .visual-refresh-chat-input .channelTextArea__74017 {
@@ -11270,4 +11270,28 @@ div#magane div.stickerWindow div.packs-toolbar {
 
 .visual-refresh .sidebarListRounded_c48ade { /*channel container*/
     border-top-left-radius: 0;
+}
+
+.visual-refresh .sidebar_c48ade::after { /*bar under the account iufo*/
+    background: transparent;
+}
+
+.addFriend__133bf {
+    background-color: var(--main-color) !important;
+}
+
+.appAsidePanelWrapper_a3002d {
+    background: transparent;
+}
+
+.notAppAsidePanel_a3002d {
+    background: transparent;
+}
+
+.sidebar_c48ade {
+    background: transparent !important;
+}
+
+.content__99f8c {
+    background: transparent !important;
 }
