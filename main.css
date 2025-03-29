@@ -2907,6 +2907,10 @@ textarea::-webkit-scrollbar {
     background: var(--home-icon) var(--home-position)/var(--home-size) no-repeat
 }
 
+.childWrapper__6e9f8 {
+    background-color: transparent !important;
+}
+
 .childWrapper__6e9f8>svg>path {
     display: none
 }
