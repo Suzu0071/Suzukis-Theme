@@ -1,25 +1,22 @@
 /**
  * @name Suzuki's-Theme
  * @author Suzuki
- * version 6.9.0
- * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/Suzu0071/Suzukis-Theme
- * @website https://clearvision.github.io
  */
 
  :root {
-    --main-color: #2780e6;
-    --hover-color: #1e63b3;
+    --main-color: #680404;
+    --hover-color: #da1212;
     --success-color: #43b581;
     --danger-color: #982929;
     --channel-color: rgba(255, 255, 255, 0.5);
     --channel-hovered: rgba(255, 255, 255, 0.7);
-    --channel-unread: var(--main-color);
+    --channel-unread: rgba(255, 255, 255, 0.7)/*var(--main-color)*/;
     --channel-selected: #fff;
     --channel-muted: rgba(255, 255, 255, 0.1);
     --server-unread: var(--main-color);
     --background-message-hover: rgba(255, 255, 255, 0.05);
-    --url-color: var(--main-color);
+    --url-color: #2a78dd;
     --focus-color: var(--main-color);
     --online-color: #43b581;
     --idle-color: #faa61a;
@@ -36,7 +33,7 @@
     --members-width: 240px;
     --background-shading: 100%;
     --background-overlay: rgba(0, 0, 0, 0.3);
-    --background-image: url(https://raw.githubusercontent.com/Suzu0071/Suzukli-s-Theme/refs/heads/main/Images/bocchi.png);
+    --background-image: url(https://raw.githubusercontent.com/Suzu0071/Suzukis-Theme/refs/heads/main/Images/Mosu.png);
     --background-position: center;
     --background-size: cover;
     --background-repeat: no-repeat;
@@ -96,7 +93,9 @@
     --bd-blue-hover: var(--hover-color);
     --bd-blue-active: var(--hover-color);
     --font-primary: var(--main-font);
-    --font-code: var(--code-font)
+    --font-code: var(--code-font);
+    --chat-container-color: rgba(0, 0, 0, 0.3);
+    --channel-bar-titles-color: #ffb4b4;
 }
 
 @keyframes cv-fade-in {
@@ -1156,7 +1155,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--main-color);
+    color: var(--channel-bar-titles-color);
     font-weight: 700;
     transition: all .3s ease-in-out;
     opacity: .7
@@ -1252,7 +1251,11 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 }
 
 .panels_c48ade {
-    background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0) !important;
+    border-top-color: var(--main-color) !important;
+    border-bottom-color: var(--main-color) !important;
+    border-right-color: var(--main-color) !important;
+    border-left-color: var(--main-color) !important;
 }
 
 .panels_c48ade>:first-child {
@@ -1450,7 +1453,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--main-color);
+    color: var(--channel-bar-titles-color);
     font-weight: 700;
     text-align: center
 }
@@ -1464,7 +1467,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     height: 2px;
     flex-grow: 1;
     transition: all .3s ease-in-out;
-    background: linear-gradient(to left, var(--main-color) 50%, transparent);
+    background: var(--channel-bar-titles-color);
     margin-right: 5px
 }
 
@@ -1473,7 +1476,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     height: 2px;
     flex-grow: 1;
     transition: all .3s ease-in-out;
-    background: linear-gradient(to right, var(--main-color) 50%, transparent);
+    background: var(--channel-bar-titles-color);
     margin-left: 5px
 }
 
@@ -1482,12 +1485,12 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 }
 
 .privateChannelsHeaderContainer__99e7c .privateChannelRecipientsInviteButtonIcon__99e7c {
-    color: var(--main-color);
+    color: var(--channel-bar-titles-color) !important;
     transition: all .1s ease-in-out
 }
 
 .privateChannelsHeaderContainer__99e7c .privateChannelRecipientsInviteButtonIcon__99e7c:hover {
-    color: var(--hover-color)
+    color: var(--main-color) !important
 }
 
 .channel__972a0 {
@@ -1611,7 +1614,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 }
 
 .base_c48ade .chat_f75fb0 {
-    background: rgba(0, 0, 0, 0)
+    background: var(--chat-container-color);
 }
 
 .base_c48ade .page_c791b2 {
@@ -1688,6 +1691,26 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 
 .noChannel__01d5c .text__33d12 {
     color: hsla(0, 0%, 100%, .3)
+}
+
+.wrapper__33d12 {
+    background: transparent;
+}
+
+.friendsEmpty_c7ea19 {
+    background: transparent;
+}
+
+.emptyStateContainer__5ec2f {
+    background: transparent;
+}
+
+.peopleColumn__133bf {
+    background: transparent;
+}
+
+.tabBody__133bf {
+    background: transparent !important;
 }
 
 .wrapper_d852db,
@@ -2028,7 +2051,7 @@ div[aria-checked=true] .mentionButton__841c8 {
 }
 
 .channelTextArea__74017 {
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .6) !important;
     transition: all .15s ease-in-out
 }
 
@@ -2894,7 +2917,7 @@ textarea::-webkit-scrollbar {
 
 .wrapper_ef3116 {
     box-shadow: none;
-    background: transparent !important;
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .tree_ef3116 {
@@ -5622,11 +5645,10 @@ code {
 }
 
 .message__5126c.mentioned__5126c {
-    background-color: hsla(0, 0%, 100%, .05)
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.message__5126c.mentioned__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
+.message__5126c.mentioned__5126c.selected__5126c {
     background-color: hsla(0, 0%, 100%, .08)
 }
 
@@ -11222,11 +11244,11 @@ div#magane div.stickerWindow div.packs-toolbar {
 
 .visual-refresh .wrapper_ef3116,
 .visual-refresh .panels_c48ade,
-.visual-refresh .header_f37cb1,
+.visual-refresh .header_f37cb1,f
 .visual-refresh .sidebar_c48ade::after .standardSidebarView__23e6b,
 .visual-refresh .sidebarRegionScroller__23e6b,
 .visual-refresh .tabBody__133bf {
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0) !important
 }
 
 .visual-refresh .chatContent_f75fb0 {
@@ -11240,4 +11262,12 @@ div#magane div.stickerWindow div.packs-toolbar {
 
 .visual-refresh-chat-input .channelTextArea__74017 {
     background-color: rgba(0, 0, 0, .6)
+}
+
+.bar_c38106 { /*top bar*/
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.visual-refresh .sidebarListRounded_c48ade { /*channel container*/
+    border-top-left-radius: 0;
 }
