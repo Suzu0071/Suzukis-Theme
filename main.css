@@ -11281,6 +11281,10 @@ div#magane div.stickerWindow div.packs-toolbar {
     background: transparent;
 }
 
+.visual-refresh .embedFull__623de {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
 .addFriend__133bf {
     background-color: var(--main-color) !important;
 }
