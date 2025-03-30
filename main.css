@@ -11299,3 +11299,7 @@ div#magane div.stickerWindow div.packs-toolbar {
 .content__99f8c {
     background: transparent !important;
 }
+
+.text_c9d15c {
+    color: var(--channel-color);
+}
