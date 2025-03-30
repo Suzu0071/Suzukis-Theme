@@ -17,6 +17,7 @@
     --server-unread: var(--main-color);
     --background-message-hover: rgba(255, 255, 255, 0.05);
     --url-color: #2a78dd;
+    --container-link-color: #ffffff;
     --focus-color: var(--main-color);
     --online-color: #43b581;
     --idle-color: #faa61a;
@@ -95,7 +96,7 @@
     --font-primary: var(--main-font);
     --font-code: var(--code-font);
     --chat-container-color: rgba(0, 0, 0, 0.3);
-    --channel-bar-titles-color: #ffb4b4;
+    --channel-bar-titles-color: #b84040;
 }
 
 @keyframes cv-fade-in {
@@ -5380,7 +5381,7 @@ code {
 }
 
 .embed__623de .embedTitleLink__623de {
-    color: var(--main-color) !important
+    color: var(--container-link-color) !important
 }
 
 .embed__623de .embedVideoActions__623de .wrapper__926d7 {
