@@ -5391,7 +5391,7 @@ code {
 }
 
 .embed__623de a>code.inline {
-    color: var(--main-color)
+    color: #ffffff !important;
 }
 
 .embed__623de .embedFooterText__623de {
