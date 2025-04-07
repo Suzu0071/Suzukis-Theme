@@ -2117,7 +2117,7 @@ div[aria-checked=true] .mentionButton__841c8 {
 }
 
 .stackedBars__74017 {
-    background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0) !important;
 }
 
 .stackedAttachedBar_bdf0de {
