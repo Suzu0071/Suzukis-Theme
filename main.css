@@ -6,6 +6,7 @@
 
  :root {
     --main-color: #680404;
+    --secondary-color: #b84040;
     --hover-color: #da1212;
     --success-color: #43b581;
     --danger-color: #982929;
@@ -96,7 +97,6 @@
     --font-primary: var(--main-font);
     --font-code: var(--code-font);
     --chat-container-color: rgba(0, 0, 0, 0.3);
-    --channel-bar-titles-color: #b84040;
 }
 
 @keyframes cv-fade-in {
@@ -1156,7 +1156,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--channel-bar-titles-color);
+    color: var(--secondary-color);
     font-weight: 700;
     transition: all .3s ease-in-out;
     opacity: .7
@@ -1454,7 +1454,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--channel-bar-titles-color);
+    color: var(--secondary-color);
     font-weight: 700;
     text-align: center
 }
@@ -1468,7 +1468,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     height: 2px;
     flex-grow: 1;
     transition: all .3s ease-in-out;
-    background: var(--channel-bar-titles-color);
+    background: var(--secondary-color);
     margin-right: 5px
 }
 
@@ -1477,7 +1477,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     height: 2px;
     flex-grow: 1;
     transition: all .3s ease-in-out;
-    background: var(--channel-bar-titles-color);
+    background: var(--secondary-color);
     margin-left: 5px
 }
 
@@ -1486,7 +1486,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 }
 
 .privateChannelsHeaderContainer__99e7c .privateChannelRecipientsInviteButtonIcon__99e7c {
-    color: var(--channel-bar-titles-color) !important;
+    color: var(--secondary-color) !important;
     transition: all .1s ease-in-out
 }
 
@@ -1892,7 +1892,7 @@ div[aria-checked=true] .mentionButton__841c8 {
 
 .content__908e2 {
     background: rgba(0, 0, 0, 0) !important;
-    color: var(--channel-bar-titles-color)
+    color: var(--secondary-color)
 }
 
 .divider__5126c {
@@ -3646,7 +3646,7 @@ textarea::-webkit-scrollbar {
     padding-top: 20px;
     display: flex;
     align-items: center;
-    color: var(--channel-bar-titles-color);
+    color: var(--secondary-color);
     font-size: 11px;
     font-weight: 700;
     transition: all .15s ease-in-out;
@@ -3661,7 +3661,7 @@ textarea::-webkit-scrollbar {
     content: "";
     height: 2px;
     flex-grow: 1;
-    background: var(--channel-bar-titles-color);
+    background: var(--secondary-color);
     margin-right: 5px
 }
 
@@ -3669,7 +3669,7 @@ textarea::-webkit-scrollbar {
     content: "";
     height: 2px;
     flex-grow: 1;
-    background: var(--channel-bar-titles-color);
+    background: var(--secondary-color);
     margin-left: 5px
 }
 
@@ -10009,7 +10009,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 }
 
 .header_b3f026 {
-    color: var(--channel-bar-titles-color);
+    color: var(--secondary-color);
     font-weight: 700;
     padding-top: 20px;
     display: flex;
@@ -10021,7 +10021,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
     content: "";
     height: 2px;
     flex-grow: 1;
-    background: var(--channel-bar-titles-color);
+    background: var(--secondary-color);
     margin-right: 5px
 }
 
@@ -10029,7 +10029,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
     content: "";
     height: 2px;
     flex-grow: 1;
-    background: var(--channel-bar-titles-color);
+    background: var(--secondary-color);
     margin-left: 5px
 }
 
