@@ -1773,7 +1773,7 @@ div[aria-checked=true] .mentionButton__841c8 {
 }
 
 .jumpToPresentBar__0f481 {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.5) !important;
     border-radius: 3px;
     transition: all .15s ease-in-out;
     padding-bottom: 0px;
