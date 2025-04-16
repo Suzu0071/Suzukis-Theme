@@ -11309,3 +11309,15 @@ div#magane div.stickerWindow div.packs-toolbar {
 .text_c9d15c {
     color: var(--channel-color);
 }
+
+.defaultColor__4bd52 { /*user bio, etc.*/
+    color: #ffffff !important;
+}
+
+.userTagUsername__63ed3 {
+    color: #ffffff;
+}
+
+div[data-text-variant="text-sm/normal"] {
+    color: #ffffff !important;
+  }
