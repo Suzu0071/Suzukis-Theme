@@ -26,9 +26,9 @@
     --dnd-color: #982929;
     --offline-color: #808080;
     --streaming-color: #593695;
-    --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --main-font: Ubuntu-R/*gg sans, Helvetica Neue, Helvetica, Arial, sans-serif*/;
     --other-font: Courier New, monospace;
-    --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+    --code-font: Courier New, monospace;
     --font-display: var(--main-font);
     --text-normal: rgb(220, 221, 222);
     --text-muted: rgb(114, 118, 125);
@@ -99,6 +99,12 @@
     --font-code: var(--code-font);
     --chat-container-color: rgba(0, 0, 0, 0.3);
 }
+
+@font-face {
+    font-family: 'Ubuntu-R';
+    src: url(Ubuntu-R.ttf) format('truetype');
+}
+
 
 @keyframes cv-fade-in {
     from {
